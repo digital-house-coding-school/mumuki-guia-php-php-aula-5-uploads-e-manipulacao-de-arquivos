@@ -30,7 +30,7 @@ public function testImagenError(): void {
   
   $this->assertTrue(is_bool($resultado), "A função não está retornando um booleano");
   
-  $this->assertFalse($resultado, "A função falha
+  $this->assertFalse($resultado, "A função falha.
 Recebemos um formulário com pelo menos o seguinte campo: se o carregamento do arquivo tiver erros");
 }
 
