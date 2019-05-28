@@ -1,0 +1,1 @@
+Esta seção é de uploads e manipulação de arquivos.
