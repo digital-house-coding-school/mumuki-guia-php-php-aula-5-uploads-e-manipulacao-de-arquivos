@@ -1,4 +1,4 @@
-Vamos construir uma função chamada `enter0Y100` (atente-se as letras maiúsculas!) Que receberá **um parâmetro**
+Vamos construir uma função chamada `entre0e100` (atente-se as letras maiúsculas!) Que receberá **um parâmetro**.
 
 Este parâmetro será um número.
 

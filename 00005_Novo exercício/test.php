@@ -1,19 +1,22 @@
 public function testDescriptionExample(): void {
-  $this->assertTrue(function_exists("entre0Y100"), "No existe la función entre0Y100");
+  $this->assertTrue(function_exists("entre0e100"), "A função entre0e100 não existe.");
   
-  $fct = new ReflectionFunction('entre0Y100');
+  $fct = new ReflectionFunction('entre0e100');
   $fct = $fct->getNumberOfRequiredParameters();
   
-  $this->assertTrue($fct == 1, "La función debe recibir un parámetro");
+  $this->assertTrue($fct == 1, "A função deve receber um parámetro");
+
+  $this->assertTrue(entre0e100(0) == true, "Sua função não funcionou muito bem com o número 0");
   
-  $this->assertTrue(entre0Y100(50) == true, "La función falla para el número 50");
-  $this->assertTrue(entre0Y100(0) == true, "La función falla para el número 0");
-  $this->assertTrue(entre0Y100(100) == true, "La función falla para el número 100");
+  $this->assertTrue(entre0e100(50) == true, "Sua função não funcionou muito bem com o número 50");
   
-  $this->assertTrue(entre0Y100(200) == false, "La función falla para el número 200");
-  $this->assertTrue(entre0Y100(101) == false, "La función falla para el número 100");
+  $this->assertTrue(entre0e100(100) == true, "Sua função não funcionou muito bem com o número 100");
+
+  $this->assertTrue(entre0e100(101) == false, "Sua função não funcionou muito bem com o número  101");
+
+  $this->assertTrue(entre0e100(200) == false, "Sua função não funcionou muito bem com o número 200");
   
+  $this->assertTrue(entre0e100(-90) == false, "Sua função não funcionou muito bem com o número o -90");
   
-  $this->assertTrue(entre0Y100(-90) == false, "La función falla para el número -90");
-  $this->assertTrue(entre0Y100(-1) == false, "La función falla para el número -1");
+  $this->assertTrue(entre0e100(-1) == false, "Sua função não funcionou muito bem com o número  -1");
 }

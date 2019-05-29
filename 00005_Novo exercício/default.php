@@ -1,3 +1,3 @@
-function enter0Y100($numero){
+function entre0e100($numero){
   
 }
