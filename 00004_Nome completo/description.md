@@ -1,4 +1,4 @@
-Sua tarefa é escrever uma função chamada `fullName` que receberá 2 argumentos:
+Sua tarefa é escrever uma função chamada `nomeCompleto` que receberá 2 argumentos:
 
 1. um nome
 2. Um sobrenome

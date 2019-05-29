@@ -1,3 +1,3 @@
-function fullName($nome, $sobrenome){
+function nomeCompleto($nome, $sobrenome){
 
 }

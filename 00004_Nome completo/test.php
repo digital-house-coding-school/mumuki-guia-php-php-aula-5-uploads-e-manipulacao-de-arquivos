@@ -1,14 +1,14 @@
 public function testDescriptionExample(): void {
-  $this->assertTrue(function_exists("nombreCompleto"), "No existe la función nombreCompleto");
+  $this->assertTrue(function_exists("nomeCompleto"), "A função nomeCompleto não existe.");
   
-  $fct = new ReflectionFunction('nombreCompleto');
+  $fct = new ReflectionFunction('nomeCompleto');
   $fct = $fct->getNumberOfRequiredParameters();
   
-  $this->assertTrue($fct == 2, "La función debe recibir dos argumentos");
+  $this->assertTrue($fct == 2, "A função deve receber dois parâmetros");
   
-  $res = nombreCompleto("Jon", "Snow");
-  $this->assertTrue($res === "Jon Snow", "Dado el nombre Jon Snow la función retorna '$res'");
+  $res = nomeCompleto("Jon", "Snow");
+  $this->assertTrue($res === "Jon Snow", "Dado o nome Jon Snow a funçãn retorna '$res'");
   
-  $res = nombreCompleto("Arya", "Stark");
-  $this->assertTrue($res === "Arya Stark", "Dado el nombre Arya Stark la función retorna '$res'");
+  $res = nomeCompleto("Arya", "Stark");
+  $this->assertTrue($res === "Arya Stark", "Dado o nome Arya Stark a função retorna '$res'");
 }
