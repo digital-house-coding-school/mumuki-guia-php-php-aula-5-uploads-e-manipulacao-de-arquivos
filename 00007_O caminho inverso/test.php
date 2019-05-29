@@ -36,9 +36,9 @@ public function testArray2(): void {
   
   $resultado = aArray($json);
   
-  $this->assertTrue(is_array($resultado), "La función no retorna un array");
+  $this->assertTrue(is_array($resultado), "A função não retorna um array");
   
   $json2 = json_encode($resultado);
   
-  $this->assertTrue($json == $json2, "La función no retorna el array esperado");
+  $this->assertTrue($json == $json2, "A função não retorna o array esperado");
 }
