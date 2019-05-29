@@ -1,3 +1,3 @@
-function encriptar($textoPlano) {
+function encriptar($texto) {
 
 }
