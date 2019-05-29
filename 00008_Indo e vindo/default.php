@@ -1,0 +1,3 @@
+function agregarUsuario($jsonUsuarios, $novoUsuario) {
+  
+}
