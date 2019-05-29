@@ -1,0 +1,3 @@
+function arrayJSON($array) {
+
+}
