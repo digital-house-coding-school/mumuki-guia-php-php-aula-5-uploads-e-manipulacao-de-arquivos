@@ -1,4 +1,11 @@
+public function testHash(): void {
+  $texto = "monito123";
+  \
+  $resultado = $this->encriptar($texto);
+  
+  $this->assertTrue(is_string($resultado), "A função não está retornando uma string");
+  
+  $this->assertTrue(password_verify($texto, $resultado), "O hash retornado parece estar incorreto");
+}
 
-Neste exercício você deve completar a função `encrypt` que recebe um texto simples e deve retornar uma string com o texto criptografado.
-
-Sucessos!
+public /*...content...*/

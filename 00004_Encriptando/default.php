@@ -1,3 +1,3 @@
-function nomeCompleto($nome, $sobrenome){
+function encriptar($textoPlano) {
 
 }
