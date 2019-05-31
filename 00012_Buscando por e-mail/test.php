@@ -18,28 +18,28 @@ public function testPrimerUsuario(): void {
   
   file_put_contents("usuarios.json", $usuarios);
   
-  $usuario = buscarPorEmail("dario@digitalhouse.com");
+  $usuario = buscarPorEmail("programacao@digitalhouse.com");
   
-  $this->assertTrue(is_array($usuario), "La función no esta retornando un array al buscar el usuario 'dario@digitalhouse.com'. Este usuario sí existe y en este caso deberías retornar un array con todos los datos del usuario");
+  $this->assertTrue(is_array($usuario), "A função não está retornando um array ao buscar o usuário 'programacao@digitalhouse.com'");
   
-  $this->assertTrue(array_key_exists("email", $usuario), "El array que se retornó no tiene una pocisión 'email'");
+  $this->assertTrue(array_key_exists("email", $usuario), "O array retornado não possui a posição 'email'");
   
-  $this->assertTrue($usuario["email"] === "dario@digitalhouse.com", "El usuario retornado no es el correcto. Se buscó a 'dario@digitalhouse.com' pero se retorno a '" . $usuario["email"] . "'");
+  $this->assertTrue($usuario["email"] === "dario@digitalhouse.com", "O usuário retornado não é o correto. Buscamos 'programacao@digitalhouse.com' porém foi retornado '" . $usuario["email"] . "'");
 }
 
 public function testSegundoUsuario(): void {
   $usuarios = [
     0 => [
-      "username" => "dariosus",
-      "email" => "dario@digitalhouse.com"
+      "username" => "Thomaz",
+      "email" => "thomaz@digitalhouse.com"
     ],
     1 => [
-      "username" => "aleviv",
-      "email" => "alejandro@digitalhouse.com"
+      "username" => "Victor",
+      "email" => "victor@digitalhouse.com"
     ],
     2 => [
-      "username" => "javih",
-      "email" => "javier@digitalhouse.com"
+      "username" => "Guilherme",
+      "email" => "guilherme@digitalhouse.com"
     ]
   ];
   
@@ -47,28 +47,28 @@ public function testSegundoUsuario(): void {
   
   file_put_contents("usuarios.json", $usuarios);
   
-  $usuario = buscarPorEmail("alejandro@digitalhouse.com");
+  $usuario = buscarPorEmail("fullstack@digitalhouse.com");
   
-  $this->assertTrue(is_array($usuario), "La función no esta retornando un array al buscar el usuario 'alejandro@digitalhouse.com'. Este usuario sí existe y en este caso deberías retornar un array con todos los datos del usuario");
+  $this->assertTrue(is_array($usuario), "A função não está retornando um array ao buscar o usuário 'fullstack@digitalhouse.com'");
   
-  $this->assertTrue(array_key_exists("email", $usuario), "El array que se retornó no tiene una pocisión 'email'");
+  $this->assertTrue(array_key_exists("email", $usuario), "O array retornado não possui a posição 'email'");
   
-  $this->assertTrue($usuario["email"] === "alejandro@digitalhouse.com", "El usuario retornado no es el correcto. Se buscó a 'alejandro@digitalhouse.com' pero se retorno a '" . $usuario["email"] . "'");
+  $this->assertTrue($usuario["email"] === "alejandro@digitalhouse.com", "O usuário retornado não é o correto. Buscamos 'fullstack@digitalhouse.com' porém foi retornado '" . $usuario["email"] . "'");
 }
 
 public function testError(): void {
   $usuarios = [
     0 => [
-      "username" => "dariosus",
-      "email" => "dario@digitalhouse.com"
+      "username" => "Thomaz",
+      "email" => "thomaz@digitalhouse.com"
     ],
     1 => [
-      "username" => "aleviv",
-      "email" => "alejandro@digitalhouse.com"
+      "username" => "Victor",
+      "email" => "victor@digitalhouse.com"
     ],
     2 => [
-      "username" => "javih",
-      "email" => "javier@digitalhouse.com"
+      "username" => "Guilherme",
+      "email" => "guilherme@digitalhouse.com"
     ]
   ];
   
@@ -78,5 +78,5 @@ public function testError(): void {
   
   $usuario = buscarPorEmail("pepito@digitalhouse.com");
   
-  $this->assertTrue(is_null($usuario), "La función debería retornar NULL si no se encuentra el email buscado");
+  $this->assertTrue(is_null($usuario), "A função deveria retornar NULL caso não encontre o e-mail buscado");
 }
