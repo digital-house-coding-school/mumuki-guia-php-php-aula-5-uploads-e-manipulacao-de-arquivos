@@ -1,3 +1,3 @@
-function verifyPass($hash){
+function verificarPassword($hash){
   
 }

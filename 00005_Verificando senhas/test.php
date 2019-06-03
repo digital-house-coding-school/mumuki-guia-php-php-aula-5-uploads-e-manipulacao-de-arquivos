@@ -6,11 +6,11 @@ public function testOk(): void {
     "password" => $pass
   ];
   
-  $resultado = $this->verificarPass($hash);
+  $resultado = $this->verificarPassword($hash);
   
-  $this->assertTrue(is_bool($resultado), "La función no esta retornando un booleano");
+  $this->assertTrue(is_bool($resultado), "A função não está retornando um valor booleano");
   
-  $this->assertTrue($resultado, "La función indica un error cuando la contraseña es correcta!");
+  $this->assertTrue($resultado, "A função indicou um erro ao compara a senha");
 }
 
 
@@ -22,9 +22,9 @@ public function testError(): void {
     "password" => "manzana"
   ];
   
-  $resultado = $this->verificarPass($hash);
+  $resultado = $this->verificarPassword($hash);
   
-  $this->assertTrue(is_bool($resultado), "La función no esta retornando un booleano");
+  $this->assertTrue(is_bool($resultado), "A função não está retornando um valor booleano");
   
   $this->assertFalse($resultado, "La función indica una contraseña correcta cuando en realidad esta mal!");
 }
