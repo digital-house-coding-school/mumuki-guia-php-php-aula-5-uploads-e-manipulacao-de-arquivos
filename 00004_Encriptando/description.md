@@ -1,1 +1,1 @@
-Você deve completar a função `encrypt` que recebe um texto simples como parâmetro e deve retornar uma string com o texto criptografado.
+Você deve completar a função `encriptar` que recebe um texto simples como parâmetro e deve retornar uma string com o texto criptografado.
