@@ -10,7 +10,7 @@ public function testOk(): void {
   
   $this->assertTrue(is_bool($resultado), "A função não está retornando um valor booleano");
   
-  $this->assertTrue($resultado, "A função indicou um erro ao compara a senha");
+  $this->assertTrue($resultado, "A função indicou um erro ao comparar a senha");
 }
 
 
@@ -26,7 +26,7 @@ public function testError(): void {
   
   $this->assertTrue(is_bool($resultado), "A função não está retornando um valor booleano");
   
-  $this->assertFalse($resultado, "La función indica una contraseña correcta cuando en realidad esta mal!");
+  $this->assertFalse($resultado, "A função indicou um erro ao comparar a senha");
 }
 
 public /*...content...*/ 
