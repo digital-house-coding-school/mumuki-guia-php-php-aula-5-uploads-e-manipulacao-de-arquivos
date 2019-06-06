@@ -1,4 +1,4 @@
-public function testLeer1(): void {
+public function testLer1(): void {
   $arquivo = "prova.txt";
   
   $conteudo = "Prova 1";
@@ -12,7 +12,7 @@ public function testLeer1(): void {
   $this->assertTrue($resposta === $conteudo, "A função está retornando '$resposta' ao invés do conteúdo do arquivo");
 }
 
-public function testLeer2(): void {
+public function testLer2(): void {
   $arquivo = "saudacao.txt";
   
   $conteudo = "Ola Mundo!";
