@@ -43,5 +43,3 @@ public function testPNG(): void {
 }
 
 public /*...content...*/
-
-Recebemos um formulário com o seguinte campo:
