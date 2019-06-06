@@ -26,5 +26,3 @@ public function testAgregarUsuario1(): void {
   
   $this->assertTrue($usuariosJSON === $resultado, "O resultado obtido não é o esperado");
 }
-
-
