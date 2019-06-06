@@ -1,5 +1,5 @@
 public function testJPG(): void {
- /*...content...*/
+ 
   $_FILES = [
     "avatar" => [
       "name" => "avatar.jpg",
@@ -15,4 +15,4 @@ public function testJPG(): void {
   
   $this->assertTrue($resultado, "A função está falhando para o arquivo 'avatar.jpg'");
 }
-
+public /*...content...*/
