@@ -1,4 +1,5 @@
 public function testJPG(): void {
+ /*...content...*/
   $_FILES = [
     "avatar" => [
       "name" => "avatar.jpg",
@@ -16,6 +17,7 @@ public function testJPG(): void {
 }
 
 public function testPNG(): void {
+ /*...content...*/
   $_FILES = [
     "avatar" => [
       "name" => "avatar.png",
@@ -33,6 +35,7 @@ public function testPNG(): void {
 }
 
 public function testJPEG(): void {
+ /*...content...*/
   $_FILES = [
     "avatar" => [
       "name" => "avatar.jpeg",
@@ -48,4 +51,3 @@ public function testJPEG(): void {
   
   $this->assertTrue($resultado, "A função está falhando para o arquivo 'avatar.jpeg'");
 }
- /*...content...*/
