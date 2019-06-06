@@ -1,5 +1,4 @@
 public function testJPG(): void {
-
   $_FILES = [
     "avatar" => [
       "name" => "avatar.jpg",
@@ -17,7 +16,6 @@ public function testJPG(): void {
 }
 
 public function testPNG(): void {
- 
   $_FILES = [
     "avatar" => [
       "name" => "avatar.png",
@@ -35,7 +33,6 @@ public function testPNG(): void {
 }
 
 public function testJPEG(): void {
-
   $_FILES = [
     "avatar" => [
       "name" => "avatar.jpeg",
