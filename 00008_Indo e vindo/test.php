@@ -1,7 +1,7 @@
 public function testAgregarUsuario1(): void {
   $usuarios = [
     0 => [
-      "nome" => "Cassio",
+      "nome" => "Cássio",
       "sobrenome" => "Ramos"
     ],
     1 => [
