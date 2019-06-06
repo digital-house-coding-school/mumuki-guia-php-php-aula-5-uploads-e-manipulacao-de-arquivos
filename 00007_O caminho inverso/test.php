@@ -17,7 +17,7 @@ public function testArray1(): void {
 }
 
 public function testArray2(): void {
-  $unArray = [
+  $array = [
     0 => [
       "nome" => "Thomaz",
       "sobrenome" => "Staziak"
