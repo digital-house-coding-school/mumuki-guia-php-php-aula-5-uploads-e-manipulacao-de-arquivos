@@ -48,5 +48,4 @@ public function testJPEG(): void {
   
   $this->assertTrue($resultado, "A função está falhando para o arquivo 'avatar.jpeg'");
 }
-
-public /*...content...*/
+ /*...content...*/
