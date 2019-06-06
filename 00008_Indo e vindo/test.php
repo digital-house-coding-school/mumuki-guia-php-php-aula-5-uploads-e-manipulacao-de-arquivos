@@ -27,25 +27,4 @@ public function testAgregarUsuario1(): void {
   $this->assertTrue($usuariosJSON === $resultado, "O resultado obtido não é o esperado");
 }
 
-public function testAgregarUsuario2(): void {
-  $usuarios = [
-
-  ];
-  
-  $usuariosJSON = json_encode($usuarios);
-  
-  $novoUsuario = [
-    "nome" => "Chico",
-    "sobrenome" => "Xavier"
-  ];
-  
-  $resultado = agregarUsuario($usuariosJSON, $novoUsuario);
-  
-  $this->assertTrue(is_string($resultado), "O resultado da função deveria ser uma string);
-  
-  $usuarios[] = $novoUsuario;
-  $usuariosJSON = json_encode($usuarios);
-  
-  $this->assertTrue($usuariosJSON === $resultado, "O resultado obtido não é o esperado");
-}
 
