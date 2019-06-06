@@ -32,9 +32,9 @@ public function testArray2(): void {
     ]
   ];
   
-  $json = json_encode($unArray);
+  $json = json_encode($array);
   
-  $resultado = aArray($json);
+  $resultado = umArray($json);
   
   $this->assertTrue(is_array($resultado), "A função não retorna um array");
   
