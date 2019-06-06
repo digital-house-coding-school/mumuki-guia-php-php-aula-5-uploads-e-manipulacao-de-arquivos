@@ -1,4 +1,4 @@
-public function testCreacionUsuario(): void {
+public function testCriandoUsuario(): void {
   $_POST = [
     "email" => "arya@stark.com",
     "username" => "aryastark",
