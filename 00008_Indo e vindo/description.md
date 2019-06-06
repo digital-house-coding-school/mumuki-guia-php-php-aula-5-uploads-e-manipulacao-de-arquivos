@@ -1,4 +1,4 @@
-Agora encontramos uma função um pouco mais complexa. Iremos criar a função `agregarUsuario` que deverá receber 2 parámetros.
+Agora encontramos uma função um pouco mais complexa. Iremos criar a função `agregarUsuario` que deverá receber 2 parámetros
 
 1. Uma **string** em formato JSON que irá conter a base de usuários
 2. Um **array** com os dados de um usuario novo que será adicionado na base de usuários
