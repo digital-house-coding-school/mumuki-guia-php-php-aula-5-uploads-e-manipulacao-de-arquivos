@@ -27,7 +27,7 @@ Onde as informações virão do formulário e o campo da senha deve ser criptogr
 
 Então, os passos seriam os seguintes:
 
-1. Criar um array `$usuarios` que tenha a informação final do usuário. Isso deve incluir a senha **criptografada**.
+1. Criar um array `$usuario` que tenha a informação final do usuário. Isso deve incluir a senha **criptografada**.
 2. Leia o arquivo ** usuarios.json **
 3. Transforme o conteúdo de **usuarios.json** em um array.
 4. Adicione o novo usuário ao array de todos os usuários (`$usuarios`)
