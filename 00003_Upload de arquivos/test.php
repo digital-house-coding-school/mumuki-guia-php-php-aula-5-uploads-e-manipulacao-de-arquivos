@@ -37,7 +37,7 @@ public function testPNG(): void {
   
   $this->subirAvatar();
   
-  $this->assertTrue(is_bool($resultado), "¿Usaste move_uploaded_file?");
+  $this->assertTrue(is_bool($resultado), "Está utilizando move_uploaded_file?");
   
   $this->assertTrue($resultado, "A função está falhando se o arquivo é chamado 'avatar.png");
 }
