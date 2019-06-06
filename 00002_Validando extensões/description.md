@@ -6,6 +6,7 @@ Mais uma vez, recebemos um formulário com o seguinte campo:
 
 
 Seu trabalho é completar a função `validarExtensao`, que retorna **true** se o arquivo enviado tiver qualquer uma das seguintes extensões:
+
 1. jpg
 2. jpeg
 3. png
