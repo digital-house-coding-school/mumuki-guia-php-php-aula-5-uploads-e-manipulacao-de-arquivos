@@ -1,3 +1,3 @@
-function ($email) {
+function buscarPorEmail($email) {
 
 }
