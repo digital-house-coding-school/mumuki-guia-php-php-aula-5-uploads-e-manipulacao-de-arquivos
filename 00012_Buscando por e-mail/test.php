@@ -1,4 +1,4 @@
-public function testPrimerUsuario(): void {
+public function testPrimeiroUsuario(): void {
   $usuarios = [
     0 => [
       "username" => "dariosus",
