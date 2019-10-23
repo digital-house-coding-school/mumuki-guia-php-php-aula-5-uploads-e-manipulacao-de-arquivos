@@ -3,6 +3,7 @@ Desta vez teremos um novo desafio :sunglasses:
 A função `buscarPorEmail` receberá um parâmetro que será uma string (um email para ser mais preciso), e deve retornar o usuário que tem aquele email.
 
 Se não houver usuário com este email, você deverá retornar NULL.
+Lembre-se de de criar uma variável para armazenar o valor "Null".
 
 A base de usuários está localizada em **usuarios.json**.
 
