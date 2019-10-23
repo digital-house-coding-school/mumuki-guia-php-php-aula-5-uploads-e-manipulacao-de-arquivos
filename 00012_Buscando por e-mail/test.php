@@ -84,7 +84,7 @@ public function testError(): void {
   
   file_put_contents("usuarios.json", $usuarios);
   
-  $usuario = buscarPorEmail("thomaz@digitalhouse.com");
+  $usuario = buscarPorEmail("pepito@digitalhouse.com");
   
   $this->assertTrue(is_null($usuario), "A função deveria retornar NULL caso não encontre o e-mail buscado");
 }
