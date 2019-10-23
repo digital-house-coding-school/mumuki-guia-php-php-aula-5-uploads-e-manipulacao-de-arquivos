@@ -28,7 +28,7 @@ public function testPrimerUsuario(): void {
   
   $this->assertTrue(array_key_exists("email", $usuario), "O array retornado não possui a posição 'email'");
   
-  $this->assertTrue($usuario["email"] === "dario@digitalhouse.com", "O usuário retornado não é o correto. Buscamos 'programacao@digitalhouse.com' porém foi retornado '" . $usuario["email"] . "'");
+  $this->assertTrue($usuario["email"] === "programacao@digitalhouse.com", "O usuário retornado não é o correto. Buscamos 'programacao@digitalhouse.com' porém foi retornado '" . $usuario["email"] . "'");
 }
 
 public function testSegundoUsuario(): void {
