@@ -86,5 +86,5 @@ public function testError(): void {
   
   $usuario = buscarPorEmail("pepito@digitalhouse.com");
   
-  $this->assertTrue(is_string("Não encontramos nenhum usuário com esse email"), "A função deveria retornar a mensagem de erro caso não encontre o e-mail buscado");
+  $this->assertTrue(is_null($usuario), "A função deveria retornar NULL caso não encontre o e-mail buscado");
 }
