@@ -44,6 +44,10 @@ public function testSegundoUsuario(): void {
     2 => [
       "username" => "Guilherme",
       "email" => "guilherme@digitalhouse.com"
+    ],
+    3 => [
+      "username" => "fullstack",
+      "email" => "fullstack@digitalhouse.com"
     ]
   ];
   
@@ -57,7 +61,7 @@ public function testSegundoUsuario(): void {
   
   $this->assertTrue(array_key_exists("email", $usuario), "O array retornado não possui a posição 'email'");
   
-  $this->assertTrue($usuario["email"] === "alejandro@digitalhouse.com", "O usuário retornado não é o correto. Buscamos 'fullstack@digitalhouse.com' porém foi retornado '" . $usuario["email"] . "'");
+  $this->assertTrue($usuario["email"] === "fullstack@digitalhouse.com", "O usuário retornado não é o correto. Buscamos 'fullstack@digitalhouse.com' porém foi retornado '" . $usuario["email"] . "'");
 }
 
 public function testError(): void {
@@ -80,7 +84,7 @@ public function testError(): void {
   
   file_put_contents("usuarios.json", $usuarios);
   
-  $usuario = buscarPorEmail("pepito@digitalhouse.com");
+  $usuario = buscarPorEmail("thomaz@digitalhouse.com");
   
   $this->assertTrue(is_null($usuario), "A função deveria retornar NULL caso não encontre o e-mail buscado");
 }
