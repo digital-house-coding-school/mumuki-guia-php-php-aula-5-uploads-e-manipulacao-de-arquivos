@@ -11,6 +11,10 @@ public function testPrimerUsuario(): void {
     2 => [
       "username" => "javih",
       "email" => "javier@digitalhouse.com"
+    ],
+    3 => [
+      "username" => "master",
+      "email" => "programacao@digitalhouse.com"
     ]
   ];
   
